@@ -270,9 +270,9 @@ struct roundedShape: Shape {
 }
 
 
-struct DetailMovieView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailMovieView(viewModel: DetailMovieViewModel())
-            .environment(\.colorScheme, .dark)
-    }
-}
+//struct DetailMovieView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailMovieView(viewModel: DetailMovieViewModel())
+//            .environment(\.colorScheme, .dark)
+//    }
+//}

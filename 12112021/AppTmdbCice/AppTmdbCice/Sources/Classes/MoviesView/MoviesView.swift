@@ -84,8 +84,8 @@ struct MoviesView: View {
     }
 }
 
-struct MoviesView_Previews: PreviewProvider {
-    static var previews: some View {
-        MoviesView(viewModel: MoviesViewModel())
-    }
-}
+//struct MoviesView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MoviesView(viewModel: MoviesViewModel())
+//    }
+//}

@@ -82,9 +82,11 @@ extension DetailMovieProvider: DetailMovieProviderInputProtocol {
     }
     
     func saveDataInFirebaseDBProvider(data: DetailMovieModel) {
+        let docRef = dbFirebase.collection("myFavourites").document("movies")
         let movieId = "\(movieObject?.id ?? 0)"
+        
         if "\(data.id ?? 0)" == movieId {
-            dbFirebase.collection("myFavourites").document("movies").setData(["id": "\(data.id ?? 0)"]) { err in
+            docRef.setData(["id": "\(data.id ?? 0)"]) { err in
                 if let err = err {
                     print("Error writing document: \(err)")
                 } else {

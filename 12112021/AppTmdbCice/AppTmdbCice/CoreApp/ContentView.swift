@@ -14,6 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         if currentPage > totalPages {
+            
             if self.viewModelSession.usuarioLogado != nil {
                 HomeView()
             } else {
